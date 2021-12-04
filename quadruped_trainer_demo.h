@@ -90,34 +90,7 @@ void step( robot_leg_t* leg, location_t leg_location, int step_len, int del );
  * @note     This function operates on diagonally paired legs. Additionally, this function assumes that both pair of legs
  *           could achieve the same step len, but will still work if not.
  */
-void walk_pair_v1( robot_leg_t* front, location_t fl_loc, robot_leg_t* back, location_t bl_loc, int step_len, int del );
-
-
-/**
- * @brief    Demo function that simulates walking of the quadruped robot using
- *           purely inverse kinematics calculation.
- * @param    front: pointer to front leg
- * @param    back: pointer to back leg
- * @param    bl_loc: back leg location
- * @param    step_len: desired length of each step
- * @param    del: time delay for each iteration
- * @retval   none
- * @note     This function operates on diagonally paired legs. Additionally, 
- *           the front legs are not using inverse kinematics to move, it is hard
- *           coded to its respective values to achieve a much noticeable movement.
- *           This is done due to its tight limitations.
- */
-void walk_pair_v2( robot_leg_t* front, robot_leg_t* back, location_t bl_loc, int step_len, int del );
-
-
-/**
- * @brief    Demo function to simulate a forward step of front legs using hard
- *           coded values.
- * @param    leg: pointer to one of the front legs
- * @param    log_location: location of front leg
- * @retval   none
- */
-void front_walk( robot_leg_t* leg, location_t leg_location );
+void walk_pair( robot_leg_t* front, location_t fl_loc, robot_leg_t* back, location_t bl_loc, int step_len, int del );
 
 
 #endif /* __QUADRUPED_TRAINER_DEMO_H */
