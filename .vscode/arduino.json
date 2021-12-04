@@ -1,0 +1,9 @@
+{
+    "sketch": "quadruped_trainer.ino",
+    "port": "COM3",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "output": "../build",
+    "programmer": "arduino:avrispmkii",
+    "intelliSenseGen": "global"
+}

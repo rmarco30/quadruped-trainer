@@ -1,0 +1,9 @@
+{
+    "arduino.path": "C:/Program Files (x86)/Arduino",
+    "arduino.logLevel": "info",
+    "arduino.allowPDEFiletype": false,
+    "arduino.enableUSBDetection": true,
+    "arduino.disableTestingOpen": false,
+    "arduino.skipHeaderProvider": false,
+    "arduino.defaultBaudRate": 9600,
+}
